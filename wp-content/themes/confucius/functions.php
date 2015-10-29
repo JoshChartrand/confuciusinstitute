@@ -18,14 +18,14 @@ function site_enqueue() {
 }
 add_action( 'wp_enqueue_scripts', 'site_enqueue' );
 
-/*
+
 function load_fonts() {
-    wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=BenchNine:300,400,700');
+    wp_register_style('googleFonts', 'https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|Lato:400,300,700,100,900');
     wp_enqueue_style( 'googleFonts');
 }
-*/
 
-//add_action('wp_print_styles', 'load_fonts');
+
+add_action('wp_print_styles', 'load_fonts');
 
 // Hide admin bar
 //add_filter( 'show_admin_bar', '__return_false' );
