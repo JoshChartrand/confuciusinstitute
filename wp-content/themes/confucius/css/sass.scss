@@ -1,10 +1,39 @@
-$typeColour: #FFFFFF;
+@import "bootstrap";
+
+$typeColour: #262626;
 $headingColour: #FFFFFF;
+$footerColour: #232323;
+
+$thin: 100;
+$light: 300;
+$book: 400;
+$bold: 700;
+$extrabold: 900;
 
 p {
 	font-family: 'Lato', sans-serif;
+	color: $typeColour;
+	font-weight: $book;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: $bold;
+}
+
+footer {
+	padding: 0 !important;
+}
+
+.content-block {
+	margin-right: 0 !important;
+}
+
+.filler {
+	height: 500px;
+	background-color: $footerColour;
+}
+
+.cu-logo {
+	max-width: 400px;
 }
