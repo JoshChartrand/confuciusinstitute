@@ -5797,12 +5797,15 @@ button.close {
     display: none !important; } }
 p {
   font-family: 'Lato', sans-serif;
-  color: #262626;
-  font-weight: 400; }
+  color: #FFFFFF;
+  font-weight: 300;
+  font-size: 20px; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'PT Sans Narrow', sans-serif;
-  font-weight: 700; }
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 100px; }
 
 footer {
   padding: 0 !important; }
@@ -5812,9 +5815,32 @@ footer {
 
 .filler {
   height: 500px;
-  background-color: #232323; }
+  background-color: #232323;
+  margin: 0px !important; }
 
 .cu-logo {
   max-width: 400px; }
+
+.buddha {
+  background-color: #65A3CE; }
+
+.taoism {
+  background-color: #CCCA66; }
+
+.confucius {
+  background-color: #76CC6A; }
+
+.legalism {
+  background-color: #CC6969; }
+
+.rightCenter {
+  margin-right: 10px;
+  margin-top: 100px;
+  text-align: right; }
+
+.leftCenter {
+  margin-left: 10px;
+  margin-bottom: 100px;
+  text-align: left; }
 
 /*# sourceMappingURL=sass.css.map */

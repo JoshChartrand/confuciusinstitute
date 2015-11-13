@@ -1,8 +1,11 @@
-@import "bootstrap";
 
-$typeColour: #262626;
+@import "bootstrap"; 
+
+$typeColour: #FFFFFF;
 $headingColour: #FFFFFF;
 $footerColour: #232323;
+$textBodySize: 20px;
+$textHeaderSize: 100px;
 
 $thin: 100;
 $light: 300;
@@ -13,17 +16,21 @@ $extrabold: 900;
 p {
 	font-family: 'Lato', sans-serif;
 	color: $typeColour;
-	font-weight: $book;
+	font-weight: $light;
+	font-size: $textBodySize;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'PT Sans Narrow', sans-serif;
 	font-weight: $bold;
+	color: $typeColour;
+	font-size: $textHeaderSize;
 }
 
 footer {
 	padding: 0 !important;
 }
+
 
 .content-block {
 	margin-right: 0 !important;
@@ -32,8 +39,46 @@ footer {
 .filler {
 	height: 500px;
 	background-color: $footerColour;
+	margin: 0px !important;
 }
 
 .cu-logo {
 	max-width: 400px;
 }
+
+.buddha{
+	background-color:#65A3CE;
+}
+
+.taoism{
+	background-color:#CCCA66;
+}
+
+.confucius{
+	background-color:#76CC6A;
+}
+
+.legalism{
+
+	background-color:#CC6969;
+
+}
+
+.blocks{
+
+}
+
+.rightCenter{
+
+	margin-right: 10px;
+	margin-top: 100px;
+	text-align: right;
+}
+
+.leftCenter{
+
+	margin-left: 10px;
+	margin-bottom: 100px;
+	text-align: left;
+}
+
