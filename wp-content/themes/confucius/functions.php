@@ -15,9 +15,12 @@ function site_enqueue() {
     // Load Theme Scripts
     // wp_register_script( 'main_scripts', $child_path . '/js/script.js' );
     // wp_enqueue_script( 'main_scripts' );
+
+
 }
 add_action( 'wp_enqueue_scripts', 'site_enqueue' );
 
+add_theme_support( 'menus' );
 
 function load_fonts() {
     wp_register_style('googleFonts', 'https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|Lato:400,300,700,100,900');
@@ -28,7 +31,7 @@ function load_fonts() {
 add_action('wp_print_styles', 'load_fonts');
 
 // Hide admin bar
-//add_filter( 'show_admin_bar', '__return_false' );
+add_filter( 'show_admin_bar', '__return_false' );
 
 
 ?>

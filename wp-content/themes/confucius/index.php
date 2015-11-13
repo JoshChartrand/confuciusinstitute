@@ -3,7 +3,7 @@
     <section>
 
     		<!-- This is the wordpress loop. It grabs all of our "Posts" -->
-            <div class = "buddha blocks">
+            <div class = "buddha blocks" id = "buddha">
 
             <?php
 
@@ -50,7 +50,7 @@
                 </div>
             </div>
 
-            <div class = "taoism blocks">
+            <div class = "taoism blocks" id = "taoism">
 
              <?php
 
@@ -100,7 +100,7 @@
 
             </div>
 
-            <div class = "confucius blocks">
+            <div class = "confucius blocks" id = "confucius">
 
             <?php
 
@@ -148,7 +148,7 @@
 
             </div>
 
-            <div class = "legalism blocks">
+            <div class = "legalism blocks" id = "legalism">
 
                 <?php
             $post_id = 10;

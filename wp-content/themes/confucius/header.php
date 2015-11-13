@@ -21,11 +21,24 @@
 <header class="header">
 
         <div class='site-logo'>
-            <a href="<?php echo home_url(); ?>">
+            
                 <h1>
                     <?php bloginfo( 'name' ); ?>
                 </h1>
-            </a>
+
+            
+
+            <img class="ci-logo" src=<?php echo get_template_directory_uri() . '/images/Logo-CISU.png' ?> />
+
+            <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <p class="navbar-text"><a href = "#buddha">Buddhism</a></p>
+    <p class="navbar-text"><a href = "#taoism">Taoism</a></p>
+    <p class="navbar-text"><a href = "#confucius">Confucianism</a></p>
+    <p class="navbar-text"><a href = "#legalism">Legalism</a></p>
+  </div>
+</nav>
+
         </div>
 
 </header>
