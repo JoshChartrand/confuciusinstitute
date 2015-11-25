@@ -5,6 +5,23 @@ function load_local_jQuery() {
 }
 add_action('wp_enqueue_scripts', 'load_local_jQuery');
 
+function modify_jquery() {
+
+    if (!is_admin()) {
+
+        // comment out the next two lines to load the local copy of jQuery
+
+        wp_deregister_script('jquery');
+
+        wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js', false, '2.1.3');
+
+        wp_enqueue_script('jquery');
+
+    }
+}
+add_action('init', 'modify_jquery');
+
+
 function site_enqueue() {
     $child_path = get_template_directory_uri();
 
@@ -13,8 +30,8 @@ function site_enqueue() {
     wp_enqueue_style( 'main_css', $child_path );
 
     // Load Theme Scripts
-    // wp_register_script( 'main_scripts', $child_path . '/js/script.js' );
-    // wp_enqueue_script( 'main_scripts' );
+    wp_register_script( 'main_scripts', $child_path . '/js/script.js' );
+    wp_enqueue_script( 'main_scripts' );
 
 
 }

@@ -88,4 +88,23 @@ footer {
 }
 
 
+nav
+  {
+                position: fixed;
+                width: 100%;
+                top: 0;
+                background-color: #555;
+                text-align: center;
+                padding: 20px 0;
+               transition: all 0.3s ease-in-out 0s;
+                 opacity: 10%;
+            }
+
+nav.hidden {
+				
+				transition: all 300.3s ease-in-out 300s;
+				 
+                transform: translateY(-100%);
+            }
+
 

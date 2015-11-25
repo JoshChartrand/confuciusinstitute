@@ -30,7 +30,7 @@
 
             <img class="ci-logo" src=<?php echo get_template_directory_uri() . '/images/Logo-CISU.png' ?> />
 
-            <nav class="navbar navbar-default navbar-fixed-top">
+            <nav class="navbar navbar-fixed-top">
   <div class="container">
     <p class="navbar-text"><a href = "#buddha">Buddhism</a></p>
     <p class="navbar-text"><a href = "#taoism">Taoism</a></p>
