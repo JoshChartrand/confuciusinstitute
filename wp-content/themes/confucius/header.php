@@ -22,20 +22,19 @@
 
         <div class='site-logo'>
             
-                <h1>
-                    <?php bloginfo( 'name' ); ?>
-                </h1>
+             
+        
+            <nav>
 
-            
+                <a id = "CILink" href ="http://carleton.ca/confucius-institute/"><span class="popup" data-popuptext="Check out the Confucius Institute's website!"><img class="ci-logo" src=<?php echo get_template_directory_uri() . '/images/Logo-CISU.png' ?> />
+  </span></a>
+  <div id="menu">
 
-            <img class="ci-logo" src=<?php echo get_template_directory_uri() . '/images/Logo-CISU.png' ?> />
 
-            <nav class="navbar navbar-fixed-top">
-  <div class="container">
-    <p class="navbar-text"><a href = "#buddha">Buddhism</a></p>
-    <p class="navbar-text"><a href = "#taoism">Taoism</a></p>
-    <p class="navbar-text"><a href = "#confucius">Confucianism</a></p>
-    <p class="navbar-text"><a href = "#legalism">Legalism</a></p>
+    <p class = "cl-effect-1" id= "list"><a id = "philLink" href = "#buddha">Buddhism</a></p>
+    <p class = "cl-effect-1" id= "list" ><a id = "philLink" href = "#taoism">Taoism</a></p>
+    <p class = "cl-effect-1" id= "list" ><a id = "philLink" href = "#confucius">Confucianism</a></p>
+    <p class = "cl-effect-1" id= "list" ><a id = "philLink" href = "#legalism">Legalism</a></p>
   </div>
 </nav>
 
