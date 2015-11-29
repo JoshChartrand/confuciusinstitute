@@ -13,14 +13,6 @@ $book: 400;
 $bold: 700;
 $extrabold: 900;
 
-#bg{
-	position:fixed;
-	background-size:contain;
-	background-position:center;
-	background-repeat:no-repeat;
-	width:100%;
-	height:100%;
-}
 
 
 html, body, section {
@@ -80,6 +72,7 @@ footer {
 }
 
 .cu-logo {
+	margin-top: 80px;
 	max-width: 400px;
 }
 
@@ -137,7 +130,7 @@ footer {
 
 .leftCenter{
 
-	padding-left: 25px;
+	margin-left: 25px;
 	margin-bottom: 100px;
 	text-align: left;
 	height:100%;
@@ -213,13 +206,18 @@ nav{
 }
 
 .cl-effect-1 a:hover::before,
-.cl-effect-1 a:hover::after,
-.cl-effect-1 a:focus::before,
-.cl-effect-1 a:focus::after {
+.cl-effect-1 a:hover::after {
 	opacity: 1;
 	-webkit-transform: translateX(0px);
 	-moz-transform: translateX(0px);
 	transform: translateX(0px);
+	text-decoration: none;
+}
+
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after {
+
+	text-decoration: none;
 }
 
 span.popup {
@@ -243,9 +241,7 @@ span.popup {
   
   &:hover:after {
     opacity: 1;
-    top: 1.2em;
     max-height: 200px;
-    padding: .4em;
   }
 
 
@@ -298,10 +294,275 @@ video {
 
 .expDesc {
 	margin-top: 670px;
+	margin-left: 40%;
 	p {
 		font-size: 30px;
 		line-height: 40px;
 	}
 }
 
+.download-block {
+	//background-image: url("http://bit.ly/1TehKl5");
+	//background-image: url("http://bit.ly/1IpKmSx");
+	background-image: url("http://bit.ly/1TjySX9");
+	background-size: cover;
+	background-position-y: -80px;
+	height: 800px;
+	width: 100%;
 
+	.expTitle {
+		margin-top: 115px;
+	}
+
+	h3 {
+		font-size: 60px;
+		font-weight: $book;
+		letter-spacing: 1px;
+	}
+
+	h1 {
+		line-height: 90px;
+		font-size: 130px;
+	}
+
+	p {
+		margin-top: 260px;
+		margin-left: 50px;
+		color: #282828;
+	}
+
+}
+
+.download {
+	height: auto;
+	width: 100%;
+	margin-top: 400px;
+
+	a {
+		text-decoration: none;
+	}
+
+	img {
+		width: 80px;
+		height: auto;
+		margin-bottom: 5px;
+	}
+
+	h3 {
+		font-size: 70px;
+		font-weight: 600;
+		margin-top: 0px !important;
+		text-shadow: 0px 2px #383838;
+	}
+}
+
+.downloadIcon {
+	height: 50px;
+	width: auto;
+}
+
+.fadeIn {
+
+	img {
+
+	transform: translateZ(0);
+	transition-duration: 0.3s;
+	transition-property: transform;
+	transition-timing-function: ease-out;
+	}
+
+	&:hover {
+
+		img {
+		transform: translateY(8px);
+		}
+	}
+}
+
+
+.linkHeader{
+
+	text-decoraton: bold;
+	a {
+		text-decoration: none;
+		color:#FFFFFF;
+	}
+
+	a:hover {
+    color: gray;
+	}
+}
+
+.demoDL{
+	
+	border-left: thin solid #FFFFFF;
+	line-height: 200px;
+	margin-top: 20px;
+	color: #FFFFFF;
+
+
+}
+
+.About{
+
+	margin-top: 20px;
+	border-left: thin solid #FFFFFF;
+	line-height: 200px;
+	color: #FFFFFF;
+
+}
+
+.philLink{
+
+	margin-top: 50px;
+	color: #FFFFFF;
+		a {
+		text-decoration: none;
+		color:#FFFFFF;
+	}
+
+	a:hover {
+
+    	color: gray;
+
+	}
+		p {
+		text-decoration: none;
+		color:#FFFFFF;
+		font-size: 20px;
+	}
+
+}
+
+.footerLinks{
+
+    border-bottom: thin solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.arrow{
+
+	height: 50px;
+	width: auto;
+	margin-top: 115px;
+
+}
+
+.copyright{
+
+	font-size: 15px;
+	margin-top: 30px; 
+}
+
+.newColour{
+
+	color: gray;
+}
+
+@charset "UTF-8";
+/* CSS Document */
+
+#bg{
+	background-image:url(../images/outline3.png);
+	-webkit-animation:spin 4s linear infinite;
+	-moz-animation:spin 4s linear infinite;
+	animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+/*Symbol Fill*/
+
+#buddha2{
+	-webkit-animation: fade 5s infinite;
+	-webkit-animation-timing-function:ease;
+	z-index:4;
+}
+
+@-webkit-keyframes fade{
+	0%{ opacity: 0.0; background-image:url(../images/buddhism2.png);}
+	10%{ opacity: 1.0;background-image:url(../images/buddhism2.png); }
+	30%{ opacity: 0.0; background-image:url(../images/buddhism2.png);}
+	
+	45%{ opacity: 0.0; background-image:url(../images/silk2.png); }
+	70%{ opacity: 1.0; background-image:url(../images/silk2.png); }
+	90%{ opacity: 0.0; background-image:url(../images/silk2.png); }
+	
+	100%{ opacity: 0.0; background-image:url(../images/buddhism2.png);  }	
+}
+
+#tao2{
+	-webkit-animation: fade2 5s infinite;
+	-webkit-animation-timing-function:ease;
+	
+}
+
+@-webkit-keyframes fade2{
+	0%{ opacity: 0.0; background-image:url(../images/tao2.png);-webkit-transform: rotate(360deg); }
+	10%{ opacity: 1.0;background-image:url(../images/tao2.png);  }
+	30%{ opacity: 0.0; background-image:url(../images/tao2.png);}
+	
+	45%{ opacity: 0.0; background-image:url(../images/tai2.png); }
+	70%{ opacity: 1.0; background-image:url(../images/tai2.png); }
+	90%{ opacity: 0.0; background-image:url(../images/tai2.png); }
+	
+	100%{ opacity: 0.0; background-image:url(../images/tao2.png);  }	
+}
+
+
+#con2{
+	-webkit-animation: fade3 5s infinite;
+	-webkit-animation-timing-function:ease;
+}
+
+@-webkit-keyframes fade3{
+	0%{ opacity: 0.0; background-image:url(../images/con2.png);}
+	10%{ opacity: 1.0;background-image:url(../images/con2.png);  }
+	30%{ opacity: 0.0; background-image:url(../images/con2.png);}
+	
+	45%{ opacity: 0.0; background-image:url(../images/cali2.png); }
+	70%{ opacity: 1.0; background-image:url(../images/cali2.png); }
+	90%{ opacity: 0.0; background-image:url(../images/cali2.png); }
+	
+	100%{ opacity: 0.0; background-image:url(../images/con2.png);  }	
+}
+
+
+
+#leg2{
+	-webkit-animation: fade4 5s infinite;
+	-webkit-animation-timing-function:ease;
+}
+
+@-webkit-keyframes fade4{
+	0%{ opacity: 0.0; background-image:url(../images/legal2.png);}
+	10%{ opacity: 1.0;background-image:url(../images/legal2.png);  }
+	30%{ opacity: 0.0; background-image:url(../images/legal2.png);}
+	
+	45%{ opacity: 0.0; background-image:url(../images/army2.png); }
+	70%{ opacity: 1.0; background-image:url(../images/army2.png); }
+	90%{ opacity: 0.0; background-image:url(../images/army2.png); }
+	
+	100%{ opacity: 0.0; background-image:url(../images/legal2.png);  }	
+}
+
+
+.symbolfill{
+	position:fixed;
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+	width:100%;
+	height:100%;
+	z-index: 7;
+	display:none;
+}
+
+a{
+	z-index:9999;
+}
+
+/*End Symbol Fill*/

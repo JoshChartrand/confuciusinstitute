@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#bg{
+	background-image:url(outline3.png);
+	-webkit-animation:spin 4s linear infinite;
+	-moz-animation:spin 4s linear infinite;
+	animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+/*Symbol Fill*/
+
+#buddha{
+	-webkit-animation: fade 5s infinite;
+	-webkit-animation-timing-function:ease;
+}
+
+@-webkit-keyframes fade{
+	0%{ opacity: 0.0; background-image:url(buddhism2.png);}
+	10%{ opacity: 1.0;background-image:url(buddhism2.png); }
+	30%{ opacity: 0.0; background-image:url(buddhism2.png);}
+	
+	45%{ opacity: 0.0; background-image:url(silk2.png); }
+	70%{ opacity: 1.0; background-image:url(silk2.png); }
+	90%{ opacity: 0.0; background-image:url(silk2.png); }
+	
+	100%{ opacity: 0.0; background-image:url(buddhism2.png);  }	
+}
+
+#tao{
+	-webkit-animation: fade2 5s infinite;
+	-webkit-animation-timing-function:ease;
+	
+}
+
+@-webkit-keyframes fade2{
+	0%{ opacity: 0.0; background-image:url(tao2.png);-webkit-transform: rotate(360deg); }
+	10%{ opacity: 1.0;background-image:url(tao2.png);  }
+	30%{ opacity: 0.0; background-image:url(tao2.png);}
+	
+	45%{ opacity: 0.0; background-image:url(tai2.png); }
+	70%{ opacity: 1.0; background-image:url(tai2.png); }
+	90%{ opacity: 0.0; background-image:url(tai2.png); }
+	
+	100%{ opacity: 0.0; background-image:url(tao2.png);  }	
+}
+
+
+#con{
+	-webkit-animation: fade3 5s infinite;
+	-webkit-animation-timing-function:ease;
+}
+
+@-webkit-keyframes fade3{
+	0%{ opacity: 0.0; background-image:url(con2.png);}
+	10%{ opacity: 1.0;background-image:url(con2.png);  }
+	30%{ opacity: 0.0; background-image:url(con2.png);}
+	
+	45%{ opacity: 0.0; background-image:url(cali2.png); }
+	70%{ opacity: 1.0; background-image:url(cali2.png); }
+	90%{ opacity: 0.0; background-image:url(cali2.png); }
+	
+	100%{ opacity: 0.0; background-image:url(con2.png);  }	
+}
+
+
+
+#leg{
+	-webkit-animation: fade4 5s infinite;
+	-webkit-animation-timing-function:ease;
+}
+
+@-webkit-keyframes fade4{
+	0%{ opacity: 0.0; background-image:url(legal2.png);}
+	10%{ opacity: 1.0;background-image:url(legal2.png);  }
+	30%{ opacity: 0.0; background-image:url(legal2.png);}
+	
+	45%{ opacity: 0.0; background-image:url(army2.png); }
+	70%{ opacity: 1.0; background-image:url(army2.png); }
+	90%{ opacity: 0.0; background-image:url(army2.png); }
+	
+	100%{ opacity: 0.0; background-image:url(legal2.png);  }	
+}
+
+
+.symbolfill{
+	position:fixed;
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+	width:100%;
+	height:100%;
+	z-index: 2;
+	display:none;
+}
+
+/*End Symbol Fill*/
+
+
+
+/*Colour Divs*/
+
+#blank{
+	background-color:#FFF;
+	width: 100%;
+	height: 100%;
+	z-index:-1;
+}
+
+#crimson{
+	background-color:#BD2D30;
+	width: 100%;
+	height: 100%;
+	z-index:-1;
+}
+
+#sky{
+	width: 100%;
+	height: 100%;
+	background-color:#34A0CB;
+	z-index:-1;
+}
+
+#grass{
+	width: 100%;
+	height: 100%;
+	background-color:#4CBA1F;
+	z-index:-1;
+}
+
+#sun{
+	width: 100%;
+	height: 100%;
+	background-color:#D2AF34;
+	z-index:-1;
+}
+
+/*End colour divs*/
+
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	z-index:-3;
+	
+}

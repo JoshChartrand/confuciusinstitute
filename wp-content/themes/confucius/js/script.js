@@ -21,7 +21,6 @@
                 nav.removeClass('showing');
                 list.removeClass('showing');
                 menu.removeClass('showing');
-                console.log('test');
                 
               }
           //scroll up
@@ -58,6 +57,71 @@
   });
 });
   
+$(window).scroll(function() 
+{ 
+    if ($(this).scrollTop()> $(window).height() * 0.7 && $(this).scrollTop() < $(window).height() * 4.3) 
+    { 
+    $('#bg').fadeIn(); 
+    } 
+    
+    else
+    { 
+        $('#bg').fadeOut(); 
+    } 
+});
+
+$(window).scroll(function() 
+{ 
+    if ($(this).scrollTop()> $(window).height() * 0.7 && $(this).scrollTop() < $(window).height() * 1.3  ) 
+    { 
+    $('#buddha2').fadeIn(); 
+    } 
+    
+    else
+    { 
+        $('#buddha2').fadeOut(); 
+    } 
+});
+
+$(window).scroll(function() 
+{ 
+    if ($(this).scrollTop()> $(window).height() * 1.7 && $(this).scrollTop() < $(window).height() * 2.3 ) 
+    { 
+    $('#tao2').fadeIn(); 
+    } 
+    
+    else
+    { 
+        $('#tao2').fadeOut(); 
+    } 
+});
+
+$(window).scroll(function() 
+{ 
+    if ($(this).scrollTop()> $(window).height() * 2.7 && $(this).scrollTop() < $(window).height() * 3.3 ) 
+    { 
+    $('#con2').fadeIn(); 
+    } 
+    
+    else
+    { 
+        $('#con2').fadeOut(); 
+    } 
+});
+
+
+$(window).scroll(function() 
+{ 
+    if ($(this).scrollTop()> $(window).height() * 3.7 && $(this).scrollTop() < $(window).height() * 4.3 ) 
+    { 
+    $('#leg2').fadeIn(); 
+    } 
+    
+    else
+    { 
+        $('#leg2').fadeOut(); 
+    } 
+});
       
       
       

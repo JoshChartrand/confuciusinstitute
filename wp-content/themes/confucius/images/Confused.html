@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Confused Institute</title>
+<link href="confused.css" rel="stylesheet">
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js">
+
+</script>
+
+</head>
+
+<body>
+
+<div id="bg" class="symbolfill">
+</div>
+
+<!-- Symbol Divs -->
+
+<div id="buddha" class="symbolfill">
+</div>
+
+<div id="con" class="symbolfill">
+</div>
+
+<div id="tao" class="symbolfill">
+</div>
+
+<div id="leg" class="symbolfill">
+</div>
+
+<!-- End Symbol Divs -->
+
+
+
+<!-- Colour Divs -->
+
+<div id="blank">
+</div>
+
+<div id="sky">
+</div>
+
+<div id="sun"> 
+</div>
+
+<div id="grass">
+</div>
+
+<div id="crimson">
+</div>
+
+<!-- End Colour Divs -->
+
+<script>
+$(window).scroll(function() 
+{ 
+	if ($(this).scrollTop()> $(window).height() * 0.7 ) 
+	{ 
+	$('#bg').fadeIn(); 
+	} 
+	
+	else
+	{ 
+		$('#bg').fadeOut(); 
+	} 
+});
+
+$(window).scroll(function() 
+{ 
+	if ($(this).scrollTop()> $(window).height() * 0.7 && $(this).scrollTop() < $(window).height() * 1.3  ) 
+	{ 
+	$('#buddha').fadeIn(); 
+	} 
+	
+	else
+	{ 
+		$('#buddha').fadeOut(); 
+	} 
+});
+
+$(window).scroll(function() 
+{ 
+	if ($(this).scrollTop()> $(window).height() * 1.7 && $(this).scrollTop() < $(window).height() * 2.3 ) 
+	{ 
+	$('#tao').fadeIn(); 
+	} 
+	
+	else
+	{ 
+		$('#tao').fadeOut(); 
+	} 
+});
+
+$(window).scroll(function() 
+{ 
+	if ($(this).scrollTop()> $(window).height() * 2.7 && $(this).scrollTop() < $(window).height() * 3.3 ) 
+	{ 
+	$('#con').fadeIn(); 
+	} 
+	
+	else
+	{ 
+		$('#con').fadeOut(); 
+	} 
+});
+
+
+$(window).scroll(function() 
+{ 
+	if ($(this).scrollTop()> $(window).height() * 3.7 && $(this).scrollTop() < $(window).height() * 4.3 ) 
+	{ 
+	$('#leg').fadeIn(); 
+	} 
+	
+	else
+	{ 
+		$('#leg').fadeOut(); 
+	} 
+});
+</script>
+
+
+</body>
+</html>
